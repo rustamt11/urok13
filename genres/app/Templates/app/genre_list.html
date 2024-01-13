@@ -1,0 +1,6 @@
+<h1>Музыкальные жанры</h1>
+<ul>
+{% for genre in genres %}
+    <li><a href="{% url 'artist_list' %}">{{ genre.name }}</a></li>
+{% endfor %}
+</ul>
